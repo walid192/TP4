@@ -1,0 +1,13 @@
+﻿@model IEnumerable<String>
+<div>
+    @{
+        foreach (String s in Model)
+        {
+            <a href="Course/getcourse/@s">
+                <div>
+                    @s
+                </div>
+            </a>
+        }
+    }
+</div>
